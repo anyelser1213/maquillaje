@@ -20,8 +20,8 @@ class MaquilladoresController extends Controller
         $this->maquillador = new Maquilladores();
 
 
-        $out = new \Symfony\Component\Console\Output\ConsoleOutput();
-        $out->writeln("Estamos en el contructor==> ".Maquilladores::all());
+        //$out = new \Symfony\Component\Console\Output\ConsoleOutput();
+        //$out->writeln("Estamos en el contructor==> ".Maquilladores::all());
     }
 
     /**
@@ -54,9 +54,29 @@ class MaquilladoresController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function crear()
     {
+
         return view('maquilladores.crear');
+
+    }
+
+    public function listar()
+    {
+
+        
+        $out = new \Symfony\Component\Console\Output\ConsoleOutput();
+        $out->writeln("Estamos en el listar del controlador==> maquillador");
+
+        $opcionPrincipal = "maquilladores";
+        $opcionSegundaria = "listar";
+        $contexto = ['maquilladores'=>Maquilladores::all(),
+                     'opcion1'=>$opcionPrincipal,
+                     'opcion2'=>$opcionSegundaria
+                    ];
+
+        return view('maquilladores.lista',$contexto);
+
     }
 
     /**
@@ -117,7 +137,7 @@ class MaquilladoresController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destrir($id)
+    public function destruir($id)
     {
         $maquillador = Maquilladores::find($id);
         $maquillador->delete();

@@ -1,6 +1,6 @@
 @extends('layouts.base2')
 
-@section('titulo','Maquilladores | Listar')
+@section('titulo','Maquillaje | Maquilladores')
 
 
 
@@ -43,42 +43,12 @@
 <div class="container">
    <!-- Content here -->
 
-   <h1>Listado de maquilladores</h1>
+   <h1>Crear Maquillador</h1>
 
-   <table class="table table-dark table-striped">
-      <thead>
-         <tr>
-           <th>Nombre</th>
-           <th>Apellido</th>
-           <th>Telefono</th>
-           <th>Correo</th>
-           <th>Acción</th>
-         </tr>
-       </thead>
-
-       <tbody>
-
-            @foreach ($maquilladores as $maquilladores)
-            
-                  <tr>
-                     <td>{{ $maquilladores->nombre }}</td>
-                     <td>{{ $maquilladores->apellido }}</td>
-                     <td>{{ $maquilladores->telefono }}</td>
-                     <td>{{ $maquilladores->correo }}</td>
-                     <td>
-                        <a href="/alumnos/ver/{{$maquilladores->id}}">Ver</a>
-                        <a href="/alumnos/editar/{{$maquilladores->id}}">Editar</a>
-                        <a href="/alumnos/eliminar/{{$maquilladores->id}}">Eliminar</a>
-                     </td>
-                     
-                  </tr>
-            @endforeach
-
-       </tbody>
-    </table>
 
 
  </div>
+
 
 
 @endsection

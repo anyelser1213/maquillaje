@@ -23,22 +23,32 @@
                         @if ($opcion1 == "productos")
                             <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Productos</a>
                             <div class="dropdown-menu">
-                                @if ($opcion2 == "articulo")
-                                    <a href="blog.html" class="dropdown-item active">Articulos</a>
-                                    <a href="single.html" class="dropdown-item ">Cosmeticos</a>
+
+                                @if ($opcion2 == "articulos")
+
+                                    <a href="#" class="dropdown-item active">Articulos</a>
+                                    <a href="#" class="dropdown-item ">Cosmeticos</a>
+                                
+                                @elseif ($opcion2 == "cosmeticos")
+
+                                    <a href="#" class="dropdown-item">Articulos</a>
+                                    <a href="#" class="dropdown-item active">Cosmeticos</a>
+                                
                                 @else
-                                    <a href="blog.html" class="dropdown-item">Articulos</a>
-                                    <a href="single.html" class="dropdown-item active">Cosmeticos</a>
+
+                                    <a href="#" class="dropdown-item">Articulos</a>
+                                    <a href="#" class="dropdown-item active">Cosmeticos</a>
+                                
                                 @endif
                                 
                             </div>
                         
-                        @else
+                        @else<!----En caso de que no se elija productos se muestra asi---->
                         
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Productos</a>
                             <div class="dropdown-menu">
-                                <a href="blog.html" class="dropdown-item">Articulos</a>
-                                <a href="single.html" class="dropdown-item ">Cosmeticos</a>
+                                <a href="#" class="dropdown-item">Articulos</a>
+                                <a href="#" class="dropdown-item ">Cosmeticos</a>
                                 
                             </div>
                         @endif
@@ -46,11 +56,72 @@
                         
                     </div>
 
-                    @if ($opcion1 == "maquilladores")
-                        <a href="{{route('maquilladores')}}" class="nav-item nav-link active">Maquilladores</a>
-                    @else
-                        <a href="{{route('maquilladores')}}" class="nav-item nav-link">Maquilladores</a>
-                    @endif
+                    
+
+                    
+                    
+                    <div class="nav-item dropdown">
+
+                        @if ($opcion1 == "maquilladores")
+
+                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Maquilladores</a>
+                            
+                            <div class="dropdown-menu">
+
+                                @if ($opcion2 == "crear")
+
+                                    <a href="{{route('maquilladores.crear')}}" class="dropdown-item active">Crear</a>
+                                    <a href="{{route('maquilladores.listar')}}" class="dropdown-item ">Listar</a>
+                                
+                                
+                                @elseif ($opcion2 == "listar")
+
+                                    <a href="{{route('maquilladores.crear')}}" class="dropdown-item">Crear</a>
+                                    <a href="{{route('maquilladores.listar')}}" class="dropdown-item active">Listar</a>
+                                    
+                                @else
+                                
+                                @endif
+                            
+                            </div>
+                                
+                        
+                        @else
+
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Maquilladores</a>
+                            <div class="dropdown-menu">
+
+                                <a href="{{route('maquilladores.crear')}}" class="dropdown-item">Crear</a>
+                                <a href="{{route('maquilladores.listar')}}" class="dropdown-item ">Listar</a>
+                            
+                            
+                            </div>
+                        @endif
+
+                            
+                        
+                        
+                        
+                        
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     
     
                     @if (auth()->user()->perfil_id != 3)
@@ -85,7 +156,7 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">{{auth()->user()->nombre}}</a>
                         <div class="dropdown-menu">
-                            <a href="blog.html" class="dropdown-item">Perfil</a>
+                            <a href="#" class="dropdown-item">Perfil</a>
                             <a href="{{ route('logout') }}" class="dropdown-item">Salir</a>
                         </div>
                     </div>

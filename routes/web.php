@@ -46,8 +46,11 @@ Route::get('/logout','App\Http\Controllers\Auth\LoginController@logout')->name('
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //EL middleware es para evitar que entre si no esta autenticado
-Route::get('/maquilladores', 'App\Http\Controllers\MaquilladoresController@index')->middleware(('auth'))->name('maquilladores');
-Route::get('/maquilladores/{id}/mostrar', 'App\Http\Controllers\MaquilladoresController@mostrar')->middleware(('auth'))->name('maquilladores-mostrar');
+
+Route::get('/maquilladores/crear', 'App\Http\Controllers\MaquilladoresController@crear')->middleware(('auth'))->name('maquilladores.crear');
+Route::get('/maquilladores/listar', 'App\Http\Controllers\MaquilladoresController@listar')->middleware(('auth'))->name('maquilladores.listar');
+
+Route::get('/maquilladores/{id}/detalles', 'App\Http\Controllers\MaquilladoresController@mostrar')->middleware(('auth'))->name('maquilladores.mostrar');
 
 
 //Vista de productos(articulos o cosmeticos)
