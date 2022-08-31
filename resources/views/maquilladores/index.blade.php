@@ -7,6 +7,7 @@
 <!--LIbrerias para usar datatables con boostrap5---->
 <link rel="stylesheet" href="{{ asset('vendor/bootstrap-5.2.0-dist/css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ asset('vendor/datatables/css/dataTables.bootstrap5.min.css') }}">
+<link rel="stylesheet" href="{{ asset('fonts/fontawesome-free-5.15.4-web/css/all.min.css') }}">
 
 
 @show
@@ -49,6 +50,54 @@
 
 <div class="container">
    <!-- Content here -->
+
+   
+   
+
+
+   <!---Modal para crear un maquillador--->
+   <div class="container-fluid "> 
+    <div class="row w-100 align-items-center">
+        <div class="col text-center">
+            
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary text-center" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <i class="fas fa-plus"></i>
+            </button>
+
+
+        </div>	
+    </div>
+
+
+</div>
+
+   
+  
+  <!-- Modal Para crear Maquilladores -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
 
    <h1>Crear Maquillador</h1>
    <table id="example" class=" table table-danger table-striped table-bordered border-warning" style="width:100%">
@@ -219,6 +268,11 @@
 <script src="{{ asset('vendor/datatables/js/jquery.dataTables.min.js') }}"></script>
 <script src="{{ asset('vendor/datatables/js/dataTables.bootstrap5.min.js') }}"></script>
 <script src="{{ asset('vendor/datatables/idiomas/español.js') }}"></script>
+
+
+
+<!--Para los iconos-->
+<script src="{{ asset('fonts/fontawesome-free-5.15.4-web/js/all.min.js') }}"></script>
 
 
 
