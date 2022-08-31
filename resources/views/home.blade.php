@@ -4,6 +4,15 @@
 
 
 
+@section('enlacesJSPrincipales')
+
+<link href="{{ asset('css/global/fuentes.css') }}" rel="stylesheet">
+<link href="{{ asset('css/index/index.css') }}" rel="stylesheet">
+
+@endsection
+
+
+
 
 @section('parteSuperiorBody')
         

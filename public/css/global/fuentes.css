@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "excentrico";
+    src: url(../../fuentes/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Dynapuff";
+    src: url(../fuentes/DynaPuff/DynaPuff-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../../fuentes/Raleway/Raleway-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Vanity";
+    src: url(../fuentes/VanityTTF/Vanity-LightNarrowItalic.ttf);
+}
+
+@font-face {
+    font-family: "Glamor";
+    src: url(../../fuentes/GlamorTTF/Glamor-LightCondensedItalic.ttf);
+}
+
+@font-face {
+    font-family: "Gorgeous";
+    src: url(../../fuentes/Gorgeous/Gorgeous-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Brux";
+    src: url(../../fuentes/brux/TTF/BRUX-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Alex-Brux";
+    src: url(../../fuentes/alex-brush/AlexBrush-Regular.ttf);
+}
+
+

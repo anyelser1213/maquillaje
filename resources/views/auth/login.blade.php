@@ -33,6 +33,8 @@
     <!-- Styles -->
     <link href="{{ asset('css/base/estilos.css') }}" rel="stylesheet">
 
+    <link href="{{ asset('css/global/fuentes.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/login/login.css') }}" rel="stylesheet">
     <!--============================= POR DEFECTO DE LARAVEL ==========================================-->
 
     
@@ -58,8 +60,8 @@
             <form action="{{ route('login') }}" method="POST" id="FormularioLogin" class="login100-form validate-form" >
                 @csrf
 
-                <span class="login100-form-title p-b-43">
-                    Iniciar Sesión
+                <span class="login100-form-title p-b-43 letra">
+                    Maquillaje
                 </span>
                                 
                 
@@ -68,11 +70,11 @@
                 <div class="wrap-input100 validate-input" data-validate = "EL usuario es requerido, ejemplo: juanz23">
                     
                     
-                    <input id="email" type="text" class="input100 @error('email') is-invalid @enderror"  name="username" value="{{ old('email') }}" autocomplete="on" autofocus>
+                    <input id="email" type="text" class="input100 @error('email') is-invalid @enderror "  name="username" value="{{ old('email') }}" autocomplete="on" autofocus>
                     
                     
                     <span class="focus-input100"></span>
-                    <span class="label-input100">Usuario</span>
+                    <span class="label-input100 ">Usuario</span>
                     
                 </div>
                 
@@ -81,11 +83,11 @@
                     <input id="password" type="password" class="input100 @error('password') is-invalid @enderror" name="password" autocomplete="off">
                     
                     <span class="focus-input100"></span>
-                    <span class="label-input100">Clave</span>
+                    <span class="label-input100 ">Clave</span>
                 </div>
                 @if ($errors->any())
                 
-                    <div class="alert alert-danger text-center" role="alert">
+                    <div class="alert alert-danger text-center " role="alert">
                         Usuario o Contraseña incorrecta
                     </div>
                   
@@ -94,7 +96,7 @@
         
 
                 <div class="container-login100-form-btn">
-                    <button class="login100-form-btn">
+                    <button class="login100-form-btn ">
                         Ingresar
                     </button>
                 </div>
