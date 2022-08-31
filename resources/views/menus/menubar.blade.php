@@ -57,9 +57,15 @@
                     </div>
 
                     
+                    @if ($opcion1 == "maquilladores")
 
+                        <a href="{{ route('maquilladores.index') }}" class="nav-item nav-link">Maquilladores</a>
+                    @else
+                        <a href="{{ route('maquilladores.index') }}" class="nav-item nav-link">Maquilladores</a>
                     
+                    @endif
                     
+                    <!---
                     <div class="nav-item dropdown">
 
                         @if ($opcion1 == "maquilladores")
@@ -104,7 +110,7 @@
                         
                         
                     </div>
-
+                    --->
 
 
 

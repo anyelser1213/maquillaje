@@ -46,7 +46,7 @@ class MaquilladoresController extends Controller
                      'opcion1'=>$opcionPrincipal,
                      'opcion2'=>$opcionSegundaria
                     ];
-        return view('maquilladores.lista', $contexto);
+        return view('maquilladores.index', $contexto);
     }
 
     /**

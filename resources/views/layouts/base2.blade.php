@@ -24,7 +24,7 @@
         <!-- CSS Libraries -->
         
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="{{ asset('vendor/global/animate/animate.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('vendor/animate/animate.min.css') }}" rel="stylesheet">
         <link href="{{ asset('vendor/base/flaticon/font/flaticon.css') }}" rel="stylesheet"> 
         <link href="{{ asset('vendor/base/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
         <link href="{{ asset('vendor/base/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
@@ -774,11 +774,19 @@
         <script src="{{ asset('vendor/base/isotope/isotope.pkgd.min.js') }}"></script>
         <script src="{{ asset('vendor/base/lightbox/js/lightbox.min.js') }}"></script>
         
-        <!-- Contact Javascript File -->
-        <script src="{{ asset('js/base/mail/jqBootstrapValidation.min.js') }}"></script>
-        <script src="{{ asset('js/base/mail/contact.js') }}"></script>
+        
 
-        <!-- Template Javascript -->
+        <!-- Template Javascript MAIN -->
         <script src="{{ asset('js/base/main.js') }}"></script>
+
+
+        @section('enlacesJSPrincipales')
+
+            
+        @show
+
+        @section('enlacesJSSecundarios')
+
+        @show
     </body>
 </html>
