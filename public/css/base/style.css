@@ -270,7 +270,8 @@ a:focus {
 /*******************************/
 .hero {
     position: relative;
-    width: 100%;
+    width: 200vh;
+    height: 50vh;
     margin-bottom: 45px;
     padding: 90px 0;
     background: #F7CAC9;

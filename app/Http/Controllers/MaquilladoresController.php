@@ -32,9 +32,6 @@ class MaquilladoresController extends Controller
     public function index()
     {
 
-        
-        $prueba = new Maquilladores();
-        $jaja = $prueba->obtenerMaquilladores();
 
         $out = new \Symfony\Component\Console\Output\ConsoleOutput();
         $out->writeln("Estamos en el index del controlador de maquilladores==> ".Maquilladores::all());
@@ -54,8 +51,20 @@ class MaquilladoresController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function crear()
+    public function crear(Request $request)
     {
+
+        //Para mostrar mensajes
+        $out = new \Symfony\Component\Console\Output\ConsoleOutput();
+
+        $maquillador = new Maquilladores();
+        $maquillador->nombre = $request->nombre;
+
+        $out->writeln("\n\nData:".$request);
+        
+        $out->writeln("Maquillador:".$maquillador);
+
+
 
         return view('maquilladores.crear');
 

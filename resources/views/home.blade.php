@@ -20,23 +20,47 @@
         <div class="hero">
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="hero-text">
-                            <h1>Las chicas más felices son las más bellas</h1>
-                            <p>
-                                Autor - Audrey Hepburn 
-                            </p>
-                            <div class="hero-btn">
-                                <a class="btn" href="">Join Now</a>
-                                <a class="btn" href="">Contact Us</a>
+                    
+                    <div class="col-12">
+
+
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="{{ asset('img/base/hero.png') }}" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="{{ asset('img/base/blog-1.jpg') }}" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="{{ asset('img/base/hero.png') }}" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+
+
+
+
+
+
+
+
+                      
+                    
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 d-none d-md-block">
-                        <div class="hero-image">
-                            <img src="{{ asset('img/base/hero.png') }}" alt="Hero Image">
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -79,7 +103,6 @@
         <div class="testimonial wow fadeInUp" data-wow-delay="0.1s">
             <div class="container">
                 <div class="section-header text-center">
-                    <p>Actuales</p>
                     <h2>Maquilladores</h2>
                 </div>
                 <div class="owl-carousel testimonials-carousel">
@@ -263,6 +286,6 @@
 @endsection
 
 @section('novenaParteInformacion')
-
+@parent<!----EL (PARENT) ES PARA MOSTRAR LO QUE HAY EN LA PAGINA PADRE--->
 
 @endsection

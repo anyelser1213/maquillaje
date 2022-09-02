@@ -1,6 +1,6 @@
 @extends('layouts.base2')
 
-@section('titulo','Maquilladores')
+@section('titulo','Articulos')
 
 @section('enlacesJSPrincipales')
 
@@ -22,6 +22,7 @@
          <!-- Hero Start -->
          <div class="hero">
             <div class="container-fluid">
+                
                <div class="row align-items-center">
                   <div class="col-sm-12 col-md-6">
                         <div class="hero-text">

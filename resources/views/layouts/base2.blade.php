@@ -6,6 +6,7 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Maquillaje" name="keywords">
         <meta content="Free Website Template" name="description">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon/maquillaje.png') }}">
 
         <!---Por default---->
         
@@ -15,8 +16,7 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
-        <!-- Favicon -->
-        <link href="{{ asset('img/base/about.png') }}" rel="icon">
+    
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">

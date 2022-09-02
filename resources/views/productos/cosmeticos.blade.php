@@ -1,6 +1,6 @@
 @extends('layouts.base2')
 
-@section('titulo','Maquilladores')
+@section('titulo','Cosmeticos')
 
 @section('enlacesJSPrincipales')
 

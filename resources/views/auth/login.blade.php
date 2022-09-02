@@ -7,7 +7,8 @@
     <title>Maquillaje | Login</title>
     
     <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="{{ asset('img/icons/favicon.ico') }}"/>
+	
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon/maquillaje.png') }}">
     <!--===============================================================================================-->
         <link rel="stylesheet" type="text/css" href="{{ asset('vendor/login/bootstrap/css/bootstrap.min.css') }}">
     <!--===============================================================================================-->

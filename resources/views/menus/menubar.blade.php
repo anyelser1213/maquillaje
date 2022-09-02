@@ -1,8 +1,7 @@
 <!-- Nav Bar Start -->
-<div class="navbar navbar-expand-lg bg-dark navbar-dark">
+<div class="navbar navbar-expand-lg bg-secondary navbar-dark">
     <div class="container-fluid">
 
-        <!---<a href="{{ route('inicio') }}" class="navbar-brand letra">{{$titulo}}</a>--->
         <a class="navbar-brand" href="{{ route('inicio') }}">
             <img src="{{ asset('img/general/logo-VTV-transparente-pequeno.png')}}" width="50" height="60" alt="">
             
